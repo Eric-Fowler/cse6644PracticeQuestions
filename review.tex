@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{{booktabs}}
+\usepackage{{longtable}}
+\usepackage{indentfirst}
+
+\usepackage{subfiles}
+
+\input{glyphtounicode}
+\pdfgentounicode=1 % make ATS friendly
+
+
+\usepackage[margin=1in]{geometry}
+
+\title{CSE6644 - Iterative Methods - Practice Exam Questions}
+\author{Eric Fowler \\}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Topics to Study}
+
+\subsection{GMRES (restarted/non-restarted)}
+
+\subsection{Arnoldi}
+
+\subsection{Lanczos}
+
+\subsection{Broyden's Algorithm}
+
+\subsection{Multigrid (V-cycle)}
+
+\subsection{BFGS}
+
+\subsection{Levinberg-Marquardt}
+
+\begin{enumerate}
+
+\section{Questions}
+
+
+
+
+% \subfile{qEric}
+
+\item Prove that Arnolid is a residual projection method.
+
+\item Prove that Lanczos is a residual projection method
+
+\item How do you get $e_1$ in the GMRES method?
+
+\item If CG is based on Lanczos, which is based on Arnoldi, and Arnoldi's method is residual projection, then why is CG error projection?
+
+\item Probing
+
+\item The function $||\nabla f(x_+ ) || < \epsilon$ can be used as a stopping condition, but it can 
+Why would $\frac{\nabla f(x_i)x_i}{f(x)}$ be a better choice?
+
+\item $f(x) = sin(x)$ If $\epsilon$ is a small positive number and $x_0 = -\epsilon$, show that Newton's method gives $x_1 \cong -\frac{1}{\epsilon}$. (Dennis and Schnabel 5.16.
+
+\end{enumerate}
+
+\end{document}
